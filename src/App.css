@@ -1,0 +1,55 @@
+/* App.css */
+
+:root {
+  --background-color: #f5f5dc; /* Бежевый (светлая тема) */
+  --text-color: #a0522d; /* Коричневый (светлая тема) */
+  --button-background: #deb887; /* Светло-коричневый (светлая тема) */
+  --button-reset-background: #cd853f; /* Темно-коричневый (светлая тема) */
+}
+
+body.dark-theme {
+  --background-color: #1e1e1e; /* Темно-серый (темная тема) */
+  --text-color: #f0f8f9; /* Светло-голубой (темная тема) */
+  --button-background: #333; /* Темно-серый (темная тема) */
+  --button-reset-background: #555; /* Еще темнее (темная тема) */
+}
+
+.timer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--background-color); /* Используем переменную */
+  transition: background-color 0.3s ease; /* Плавный переход */
+}
+
+.timer-text {
+  font-size: 48px;
+  color: var(--text-color); /* Используем переменную */
+  transition: color 0.3s ease; /* Плавный переход */
+}
+
+.timer-button {
+  background-color: var(--button-background); /* Используем переменную */
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: background-color 0.3s ease; /* Плавный переход */
+}
+
+.timer-button:hover {
+  background-color: var(--button-reset-background); /* Используем переменную */
+}
+
+.timer-button-reset {
+  background-color: var(--button-reset-background); /* Используем переменную */
+}
+
+.timer-button-reset:hover {
+  background-color: #777; /* Еще темнее при наведении (темная тема) */
+}
